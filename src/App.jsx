@@ -17,11 +17,7 @@ state = {
   }
   
   addContact = ({ name, number }) => {
-    const addContact = {
-      id: nanoid(),
-      name,
-      number,
-    }
+    const addContact = { id: nanoid(), name, number }
 
     const newContact = this.state.contacts.some(contact => contact.name === name)
 
@@ -72,3 +68,4 @@ state = {
     )      
   }
 }
+

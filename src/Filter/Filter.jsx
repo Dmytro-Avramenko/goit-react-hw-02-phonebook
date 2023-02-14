@@ -1,3 +1,4 @@
+import PropTypes from "prop-types"
 import React from "react";
 
 export const Filter = ({ value, onChange }) => {
@@ -12,4 +13,9 @@ export const Filter = ({ value, onChange }) => {
                </input>
           </label>
      )
+}
+
+Filter.propTypes = {
+  onChange: PropTypes.any,
+  value: PropTypes.any
 }
