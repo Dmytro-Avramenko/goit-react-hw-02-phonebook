@@ -13,10 +13,10 @@ export const ItemContactList = ({ id, name, number, onDeleteContact }) => {
 }
 
 ItemContactList.propTypes = {
-  id: PropTypes.any,
-  name: PropTypes.string,
-  number: PropTypes.any,
-  onDeleteContact: PropTypes.func
+  id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  number: PropTypes.string.isRequired,
+  onDeleteContact: PropTypes.func.isRequired,
 }
 
 
